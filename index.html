@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Tools Online</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Image Tools</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Image Tools Online</h1>
-    <p>Resize, Convert, Change Background & Remove Background</p>
-  </header>
+<header>
+  <h1>Advanced Image Tools</h1>
+  <p>Resize, Convert, Change Background & Remove Background</p>
+</header>
 
-  <main>
-    <section>
-      <h2>Upload Your Image</h2>
-      <input type="file" id="imageInput" accept="image/*">
-      <canvas id="canvas" style="display:none;"></canvas>
-      <img id="preview" src="" alt="Preview">
-    </section>
+<main>
+  <section>
+    <h2>Upload Your Image</h2>
+    <input type="file" id="imageInput" accept="image/*">
+    <canvas id="canvas" style="display:none;"></canvas>
+    <img id="preview" src="" alt="Preview">
+  </section>
 
-    <section class="tools">
-      <h2>Tools</h2>
-      <button id="resizeBtn">Resize</button>
-      <button id="convertBtn">Convert Format</button>
-      <input type="color" id="bgColor" title="Pick background color">
-      <button id="changeBgBtn">Change Background</button>
-      <button id="removeBgBtn">Remove Background</button>
-      <button id="downloadBtn">Download</button>
-    </section>
-  </main>
+  <section class="tools">
+    <h2>Tools</h2>
+    <button id="resizeBtn">Resize</button>
+    <button id="convertBtn">Convert Format</button>
+    <input type="color" id="bgColor" title="Pick background color">
+    <button id="changeBgBtn">Change Background</button>
+    <label>Threshold: <input type="range" id="threshold" min="0" max="200" value="50"></label>
+    <button id="removeBgBtn">Remove Background</button>
+    <button id="downloadBtn">Download</button>
+    <button id="resetBtn">Reset Image</button>
+  </section>
+</main>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
