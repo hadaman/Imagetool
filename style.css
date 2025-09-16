@@ -16,7 +16,7 @@ img {
   border-radius: 5px;
 }
 
-button {
+button, input[type=color], input[type=range] {
   margin: 5px;
   padding: 10px 15px;
   cursor: pointer;
